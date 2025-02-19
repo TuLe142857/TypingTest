@@ -1,4 +1,3 @@
-from app_settings import AppSettings 
 import pygame
 
 TYPING_PENDING = 0
