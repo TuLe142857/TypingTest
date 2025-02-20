@@ -14,5 +14,10 @@ if __name__ == "__main__":
     print(intro)
     app = app.App()
     app.run()
-    input()
+    # wait for user press any key
+    wait = True
+    while wait:
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                wait = False
     pygame.quit()
